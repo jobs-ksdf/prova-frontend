@@ -1,0 +1,110 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: rgb(252, 252, 252);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    display: flex;
+    padding: 15px;
+    align-items: center;
+    justify-content: space-around;
+    font-family: 'Franklin Gothic Medium';
+    letter-spacing: 1px;
+    color: #030303;
+    border-bottom: 1px solid #727171;
+    width: 80%;
+}
+.title img {
+    width: 100px;
+}
+
+main{
+    font-family: Arial, Helvetica, sans-serif;
+    width: 90%;
+}
+.curso{
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 400px;
+    justify-content: space-around;
+    padding: 10px;
+    gap: 10px;
+
+}
+.categorias{
+    display: flex;
+    gap: 10px;   
+    text-align: center;
+}
+.categorias div{
+    border:1px solid #5e5e5e;
+    padding: 5px;
+    font-weight: bold;
+    border-radius: 20px;
+    font-size: small;
+
+}
+.info{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin: 5px;
+}
+.curso__name {
+    font-weight: bolder;
+    font-size: 30px;
+}
+.curso__sobre{
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* número de linhas */
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    width: 380px;
+}
+.tempo__curso{
+    display: flex;
+    align-items: baseline;
+    gap: 5px;
+}
+.horas{
+    font-weight: bolder;
+}
+.sobre{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.sobre div {
+    border: 1px solid red;
+    padding: 6px;
+    text-align: center;
+    width: 200px;
+    border-radius: 20px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    font-size: smaller;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+.btn__saiba__mais{
+    color: red;
+    
+    
+}
+.btn__saiba__mais:hover{
+    border-color: rgb(126, 0, 0);
+    transition: .5s;
+    color: white;
+    background:  rgb(126, 0, 0);
+}
