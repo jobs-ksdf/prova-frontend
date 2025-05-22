@@ -39,19 +39,29 @@ main{
     justify-content: space-around;
     padding: 10px;
     gap: 10px;
-
+    border: 1px solid #727171;
+    min-height: 350px;
+    border-radius: 5px;
+    margin: 10px;
 }
 .categorias{
-    display: flex;
-    gap: 10px;   
+    width: 400px;
+    gap: 10px;
+    padding: 5px;   
     text-align: center;
+    display: grid;
+    grid-template-areas: 
+    'a b c'
+    ;
 }
-.categorias div{
+.categorias > div{
     border:1px solid #5e5e5e;
     padding: 5px;
     font-weight: bold;
     border-radius: 20px;
     font-size: small;
+    height: 28px;
+
 
 }
 .info{
@@ -102,9 +112,54 @@ main{
     
     
 }
-.btn__saiba__mais:hover{
-    border-color: rgb(126, 0, 0);
+.btn__inscrever {
+    background: red;
+    color: white;
+}
+
+.btn__saiba__mais:hover,.btn__inscrever:hover{
+    border-color: rgb(153, 0, 0);
     transition: .5s;
     color: white;
-    background:  rgb(126, 0, 0);
+    background:rgb(153, 0, 0);
+}
+.shadow{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    background: rgba(0, 0, 0, 0.582);
+}
+.modal {
+    display: flex;
+    flex-direction: column;
+    width: 600px;
+    max-width: 600px
+    ;
+}
+.title__modal{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.header__modal{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+    border-bottom: 1px solid #929292;
+    padding: 15px;
+}
+.main__modal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+}
+.sub__title {
+    text-align: start;
+    align-self: self-start;
+    padding: 10px;
+    margin: 5px;
+    font-size: 20px;
+    font-style: italic;
 }
